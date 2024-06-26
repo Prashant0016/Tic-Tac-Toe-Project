@@ -1,6 +1,6 @@
 # Tic-Tac-Toe [HTML,CSS & JS]
   1. A Tic-Tac-Toe game (project) made by just HTML , CSS and JS .
-  2. Responsive Layou / Design .
+  2. Responsive Layout / Design .
   3. Third Basic JS project of mine , did not watch any tutorials , just used from internet sources such as documentation etc .  
 
 # Note 
