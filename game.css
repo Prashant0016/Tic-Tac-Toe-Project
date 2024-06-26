@@ -1,0 +1,207 @@
+header {
+    background-color: rgb(45, 42, 42);
+    box-shadow: 0 0 10px 7px rgb(119, 9, 223); 
+    color: rgb(15, 242, 34);
+    text-shadow: 5px 5px 25px rgb(0, 255, 247);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1vh;
+}
+body{
+    background-image: linear-gradient( #a0d2eb, #e5eaf5,#d0bdf4, #8458B3,#99dfea);
+}
+.ttt-grid{
+    margin-top: 20vh;
+    box-shadow: 0 0 10px 7px rgb(31, 30, 34);
+    border-radius: 5vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3vh;
+    padding: 30px;
+}
+.ttt-score-section{
+    background-color: rgba(38, 136, 171, 0.323);
+    box-shadow: 0 0 10px 7px rgba(44, 78, 152, 0.668);
+    border-radius: 2vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size:32px;
+    color: rgb(19, 7, 37);
+    text-shadow: 2px 3px 9px rgba(2, 33, 28, 0.773);
+    padding-left: 9px;
+    
+}
+.ttt-score-section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-decoration: underline 1.8px;
+}
+.ttt-game-board{
+    background-color: rgba(34, 201, 19, 0.252);
+    box-shadow: 0 0 10px 7px rgba(31, 180, 34, 0.668);
+    display: grid;
+    border-radius: 2vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Raleway", sans-serif;
+    font-size: larger;
+    padding: 50px 90px 0px 90px;
+    color:rgba(7, 4, 30, 0.647);
+}
+.col{
+    border: solid 2px rgba(4, 4, 4, 0.641);
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+@media (min-width : 843px) and (max-width : 1024px){
+    .ttt-grid{
+        grid-template-columns: 1fr;
+        margin-top: 13vh;
+    }
+    .ttt-score-section{
+        display: grid;
+        grid-template-columns:0.8fr 0.7fr 1.2fr 2fr;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .ttt-score-section h2{
+        font-size: 25px;
+        width: 90px;
+    }
+    .ttt-game-board{
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width : 768px ) and (max-width : 842px){
+    .ttt-grid{
+        grid-template-columns: 1fr;
+        margin-top: 13vh;
+    }
+    .ttt-score-section{
+        display: grid;
+        grid-template-columns:0.8fr 0.7fr 1.2fr 2fr;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .ttt-score-section h2{
+        font-size: 20px;
+        width: 90px;
+    }
+    .ttt-game-board{
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width : 561px ) and (max-width : 767px){
+    .ttt-grid{
+        grid-template-columns: 1fr;
+        margin-top: 20vh;
+    }
+    .ttt-score-section{
+        display: grid;
+        grid-template-columns:0.8fr 0.7fr 1.2fr 2fr;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .ttt-score-section h2{
+        font-size: 15px;
+        width: 90px;
+    }
+    .ttt-game-board{
+        padding: 20px; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .col{
+        border: solid 2px rgba(4, 4, 4, 0.641);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px; 
+        min-height: 60px; 
+    }
+    header{
+        font-size: 35px;
+    }
+}
+
+@media (min-width : 425px ) and (max-width : 560px){
+    .ttt-grid{
+        grid-template-columns: 1fr;
+        margin-top: 20vh;
+    }
+    .ttt-score-section{
+        display: grid;
+        grid-template-columns:0.8fr 0.7fr 1.2fr 2fr;
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+    .ttt-score-section h2{
+        font-size: 10px;
+        width: 90px;
+    }
+    .ttt-game-board{
+        padding: 20px; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .col{
+        border: solid 2px rgba(4, 4, 4, 0.641);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px; 
+        min-height: 60px; 
+    }
+    header{
+        font-size: 30px;
+    }
+}
+
+@media (min-width : 320px ) and (max-width : 424px){
+    .ttt-grid{
+        grid-template-columns: 1fr;
+        margin-top: 20vh;
+    }
+    .ttt-score-section{
+        display: grid;
+        grid-template-columns:0.8fr 0.7fr 1.2fr 2fr;
+        font-size: 8px;
+        margin-bottom: 25px;
+    }
+    .ttt-score-section h2{
+        font-size: 8px;
+        width: 30px;
+    }
+    .ttt-game-board{
+        padding: 20px; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .col{
+        border: solid 2px rgba(4, 4, 4, 0.641);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px; 
+        min-height: 60px; 
+    }
+    header{
+        font-size: 25px;
+    }
+}

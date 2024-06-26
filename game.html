@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        TIC-TAC-TOE | LET'S PLAY
+    </header>
+
+    <div class="ttt-grid">
+        <div class="ttt-score-section">
+            <h2>SCORES</h2>
+            <p>YOU : <span id="player-score">0</span></p>
+            <p>COMPUTER : <span id="computer-score">0</span></p>
+            <p id="round-result"></p>
+        </div>
+
+        <div class="ttt-game-board">
+            <div class="row-one">
+                <div class="col" id="1"></div>
+                <div class="col" id="2"></div>
+                <div class="col" id="3"></div>
+            </div>
+            <div class="row-two">
+                <div class="col" id="4"></div>
+                <div class="col" id="5"></div>
+                <div class="col" id="6"></div>
+            </div>
+            <div class="row-three">
+                <div class="col" id="7"></div>
+                <div class="col" id="8"></div>
+                <div class="col" id="9"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
